@@ -7,15 +7,18 @@ export default function MenuScreen() {
     }
 
     return (
-        <div className="flex flex-col w-full items-center justify-center py-10">
-            <ButtonComponent
-                color_spin={"blue"}
-                size_percentage_spin={"5%"}
-                delay_spin={10}
-                load={true}
-                text_button={"tables"}
-                onAction={onNavigate}
-            />
+        <div className="flex flex-col w-full h-screen bg-indigo-950 items-center justify-center py-10">
+            <div className="w-4/12">
+                <h1 className="text-white text-3xl text-center mb-8 font-bold">Menu</h1>
+                <ButtonComponent
+                    onClick={onNavigate}
+                    text="Tablas"
+                    size="full"
+                    isLoading={true}
+                    spinnerColor="purple"
+                    color="purple"
+                />
+            </div>
         </div>
     );
 }

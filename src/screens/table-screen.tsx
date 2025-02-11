@@ -94,7 +94,7 @@ export default function TableScreen() {
                     data={usersData}
                     columns={columns}
                     columnTranslations={columnTranslations}
-                    showActions={true}
+                    showActions={false}
                     isGoTo={true}
                     isEdit={true}
                     loadTablePaginate={false}

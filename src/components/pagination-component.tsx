@@ -1,5 +1,3 @@
-import ReactLoading from "react-loading";
-
 interface Props {
     page: number;
     current_page: number;
@@ -46,13 +44,14 @@ export default function PaginationComponent({
                 }
                 {loadTablePaginate &&
                     <p className="flex w-36 items-center justify-center">
-                        <ReactLoading
-                            type="spin"
-                            color={`blue`}
-                            delay={10}
-                            height={`15%`}
-                            width={`15%`}
-                        />
+                        <div className="flex w-full h-full items-center justify-center">
+                            <div className="flex items-center justify-center space-x-2">
+                                <div className={`w-5 h-5 border-4 border-blue-950 border-t-transparent 
+                                rounded-full animate-spin`}
+                                />
+                                <span>Cargando</span>
+                            </div>
+                        </div>
                     </p>
                 }
             </div>

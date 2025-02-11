@@ -21,7 +21,9 @@ export default function MenuScreen() {
     return (
         <div className="flex flex-col w-full h-screen bg-indigo-950 items-center justify-center py-10">
             <div className="w-4/12">
-                <h1 className="text-white text-3xl text-center mb-8 font-bold">Menu</h1>
+                <h1 className="text-white text-3xl text-center mb-8 font-bold">
+                    Menu
+                </h1>
                 {menuData.map((data, index) => (
                     <div key={index}>
                         <ButtonReturnComponent<string>

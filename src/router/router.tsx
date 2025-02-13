@@ -1,5 +1,5 @@
 import {Route, Routes} from "react-router-dom";
-import {MenuScreen, TableScreen} from "./routes.ts";
+import {MenuScreen, TableScreen, InputScreen} from "./routes.ts";
 
 export default function Router() {
 
@@ -7,6 +7,7 @@ export default function Router() {
         <Routes>
             <Route path="/" Component={MenuScreen}/>
             <Route path="/table" Component={TableScreen}/>
+            <Route path="/input" Component={InputScreen}/>
         </Routes>
     );
 }

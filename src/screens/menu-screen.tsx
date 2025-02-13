@@ -8,6 +8,7 @@ interface MenuData {
 
 const menuData: MenuData[] = [
     {name: 'Tables', path: '/table'},
+    {name: 'Inputs', path: '/input'},
 ];
 
 export default function MenuScreen() {
@@ -20,7 +21,7 @@ export default function MenuScreen() {
 
     return (
         <div className="flex flex-col w-full h-screen bg-indigo-950 items-center justify-center py-10">
-            <div className="w-4/12">
+            <div className="flex flex-col gap-4 w-4/12">
                 <h1 className="text-white text-3xl text-center mb-8 font-bold">
                     Menu
                 </h1>

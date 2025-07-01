@@ -9,6 +9,9 @@ interface MenuData {
 const menuData: MenuData[] = [
     {name: 'Tables', path: '/table'},
     {name: 'Inputs', path: '/input'},
+    {name: 'Sliders', path: '/sliders'},
+    {name: 'Headers', path: '/headers'},
+    {name: 'Point of sale', path: '/point_of_sale'},
 ];
 
 export default function MenuScreen() {
